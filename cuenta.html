@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cuenta - Sport's Moment</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+ 
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="img/inicio.png" alt="Inicio" class="nav-icon"><span>Inicio</span></a></li>
+                <li><a href="produtos.html"><img src="img/productos.png" alt="Productos" class="nav-icon"><span>Productos</span></a></li>
+                <li><a href="carrito.html"><img src="img/carrito.png" alt="Carrito" class="nav-icon"><span>Carrito</span></a></li>
+                <li><a href="historico.html"><img src="img/historial.png" alt="Historial de pedidos" class="nav-icon"><span>Historial de <br>pedidos</span></a></li>
+                <li><a href="cuenta.html"><img src="img/acceso.png" alt="Acceso" class="nav-icon"><span>Acceso</span></a></li>
+
+                <li class="admin-option"><a href="admin-productos.html"><img src="img/control-de-productos.png" alt="Control de productos" class="nav-icon"><span>Control de <br>productos</span></a></li>
+                <li class="admin-option"><a href="admin-usuarios.html"><img src="img/control-de-usuarios.png" alt="Control de usuarios" class="nav-icon"><span>Control de <br>usuarios</span></a></li>
+
+                <li id="logout-button"><img src="img/cerrar-sesion.png" alt="Cerrar sesion" class="cerrar-sesion"><span>Salir</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 id="titulo-acceso">Acceso/registro de cuentas</h2>
+
+    <main id="formularios">
+        <section>
+            <h3>Iniciar Sesión</h3>
+            <form id="form-inicio-sesion" action="iniciar_sesion.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Registrarse</h3>
+            <form id="form-registro" action="registro.php" method="post">
+                <label for="new-email">*Email:</label>
+                <input type="email" id="new-email" name="new-email" required>
+
+                <label for="new-password">*Contraseña:</label>
+                <input type="password" id="new-password" name="new-password" required>
+
+                <label for="confirm-password">*Confirmar Contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <label for="first-name">*Nombre:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">*Apellidos:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="alias">Alias:</label>
+                <input type="text" id="alias" name="alias">
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address">
+
+                <label for="role">Perfil:</label>
+                <select id="role" name="role">
+                    <option value="cliente">Cliente</option>
+                    <option value="admin">Administrador</option>
+                </select>
+
+                <button type="submit">Registrarse</button>
+
+                <p id="campo-obligatorio">*: Campo obligatorio</p>
+            </form>
+        </section>
+    </main>
+ 
+    <footer>
+        <p><b>&copy; 2024 Sport's Moment</p></b>
+        <p><b>Dirección:</b> Calle Falsa 123, Ciudad Ficticia, CP 45678</p>
+        <p><b>Horario:</b> Lunes a Sábado de 08:00 a 20:00</p>
+        <p><b>Contacto:</b> info@sportsmoment.com | Tel: +34 123 456 789</p>
+    </footer>
+
+    <script src="js/logout.js"></script>
+    <script src="js/check_session.js"></script>
+    <script src="js/check_role.js"></script>
+</body>
+
+</html>

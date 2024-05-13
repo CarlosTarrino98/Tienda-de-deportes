@@ -1,0 +1,287 @@
+/* Reset básico para estilos por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    color: #333333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+
+}
+
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+
+#logout-button{
+    display: none;
+}
+
+.cerrar-sesion{
+    width: 35px;
+    height: auto;    
+    cursor: pointer;
+}
+.cerrar-sesion:hover{
+    color: #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.nav-icon {
+    width: 35px;
+    height: auto;
+}
+
+span {
+    display: block;
+    font-size: 14px;
+    color: rgb(1, 2, 0);
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+}
+
+footer {
+    background-color: #00251a;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para Títulos y Texto */
+h1,
+h2,
+h3 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la Página de Inicio */
+#galeria-gimnasio {
+    margin-bottom: 20px;
+}
+
+.fondo {
+    text-align: center;
+}
+
+#galeria-gimnasio .fondo img {
+    width: 35%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+/* Estilos para la Página de Productos */
+#productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.producto img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+    transition: transform 0.6s ease;
+}
+
+.producto img:hover {
+    transform: scale(1.1);
+    border: 1px solid #004d40;
+}
+
+.input-cantidad {
+    width: 60px;
+    padding: 8px 10px;
+    border: 1px solid #00000055;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Estilos para Botones */
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #005b4f;
+}
+
+/* Estilos para Formularios */
+#titulo-acceso{
+    margin-top: 120px;
+    text-align: center;
+}
+
+#formularios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 100px; 
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#role{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#campo-obligatorio{
+    text-align: right;
+}
+
+/* Estilos para Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #4d4d4d30;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #004d40;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+tfoot tr {
+    font-weight: bold;
+    background-color: #004d40;
+    color: white;
+}
+
+tfoot td {
+    padding: 10px;
+}
+
+#Total {
+    text-align: right;
+}
+
+#Total-valor{
+    text-align: center;
+}
+
+/* Estilo gestion de productos*/
+.formulario-admin {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-admin {
+    background-color: #36835dd8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn-admin:hover {
+    background-color: #3b633b;
+}
+
+

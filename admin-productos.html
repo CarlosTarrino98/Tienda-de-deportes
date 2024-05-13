@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <title>Administración de Productos - Sport's Moment</title>
+    <link rel="stylesheet" href="css/estilos.css"> 
+</head>
+<body> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="img/inicio.png" alt="Inicio" class="nav-icon"><span>Inicio</span></a></li>
+                <li><a href="produtos.html"><img src="img/productos.png" alt="Productos" class="nav-icon"><span>Productos</span></a></li>
+                <li><a href="carrito.html"><img src="img/carrito.png" alt="Carrito" class="nav-icon"><span>Carrito</span></a></li>
+                <li><a href="historico.html"><img src="img/historial.png" alt="Historial de pedidos" class="nav-icon"><span>Historial de <br>pedidos</span></a></li>
+                <li><a href="cuenta.html"><img src="img/acceso.png" alt="Acceso" class="nav-icon"><span>Acceso</span></a></li>
+
+                <li class="admin-option"><a href="admin-productos.html"><img src="img/control-de-productos.png" alt="Control de productos" class="nav-icon"><span>Control de <br>productos</span></a></li>
+                <li class="admin-option"><a href="admin-usuarios.html"><img src="img/control-de-usuarios.png" alt="Control de usuarios" class="nav-icon"><span>Control de <br>usuarios</span></a></li>
+
+                <li id="logout-button"><img src="img/cerrar-sesion.png" alt="Cerrar sesion" class="cerrar-sesion"><span>Salir</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Panel de Administración de Productos</h1>
+        <section id="lista-productos">
+            <h2>Lista de Productos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-productos">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </tbody>
+            </table>
+            <button id="boton-añadir-producto">Añadir Producto</button>
+        </section>           
+    </main>
+ 
+    <footer>
+        <p>&copy; 2024 Sport's Moment - Administración de productos</p>
+    </footer>
+    
+    <script src="js/check_session.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/cargar-productos-admin.js"></script>
+    <script src="js/check_role.js"></script>
+</body>
+</html>
